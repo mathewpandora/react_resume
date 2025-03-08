@@ -1,0 +1,86 @@
+/* Боковое меню */
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: #A9B7C6;
+    transition: left 0.3s ease;
+    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    padding-top: 60px; /* Чтобы файлы начинались ниже хедера */
+}
+
+/* При открытии меню */
+.side-menu.open {
+    left: 0;
+}
+
+/* Кнопка меню */
+.menu-button {
+    position: fixed;
+    top: 40px; /* Подняли кнопку выше */
+    left: 5px;
+    padding: 15px;
+    background-color: #636363; /* Более серый цвет для заливки */
+    color: #A9B7C6;
+    font-size: 2rem;
+    border: none; /* Убрали обводку */
+    border-radius: 8px; /* Круглые углы */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    z-index: 1001;
+}
+
+/* При открытии меню */
+.menu-button.open {
+    background-color: #4A90E2; /* Темно-голубой цвет при открытом меню */
+}
+
+.menu-button:hover {
+    background-color: #444444; /* Потемнение серого цвета при наведении */
+}
+
+/* Иконка папки */
+.folder-icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Кнопки файлов */
+.file-button {
+    padding: 15px;
+    border-bottom: 1px solid #444;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #A9B7C6;
+    transition: background-color 0.3s, border 0.3s; /* Добавили анимацию для бордера */
+    text-align: right; /* Выравнивание по правому краю */
+    padding-right: 20px; /* Отступ справа */
+}
+
+/* Обводка при наведении */
+.file-button:hover {
+    background-color: #555;
+}
+
+/* Активный файл с обводкой */
+.file-button:active {
+    border: 2px solid #4A90E2; /* Обводка при нажатии */
+    background-color: #444; /* Потемнение фона при нажатии */
+}
+
+/* Отступы для корректного расположения */
+.side-menu {
+    padding-top: 60px; /* Расстояние от хедера, чтобы файлы не накладывались */
+}
+
+.file-icon {
+    width: 20px; /* Размер иконки */
+    height: 20px;
+    margin-right: 8px; /* Отступ справа, чтобы текст не прилипал */
+    vertical-align: middle; /* Выравнивание по центру строки */
+}
+

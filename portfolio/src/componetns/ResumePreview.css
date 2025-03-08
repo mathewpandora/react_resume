@@ -1,0 +1,91 @@
+.resume-preview, .skills-preview {
+    background-color: #2B2B2B;
+    color: #A9B7C6;
+    font-family: "Courier New", monospace;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 900px;
+    width: 100%; /* Добавляем, чтобы оба контейнера занимали всю ширину */
+    margin: auto;
+    text-align: left; /* Делаем одинаковым */
+    overflow: auto;
+    position: relative;
+}
+
+.resume-preview h1 {
+    font-size: 2.5rem;
+    color: #4A90E2;
+    margin-bottom: 20px;
+}
+
+.resume-preview p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    color: #A9B7C6;
+}
+
+.resume-preview code {
+    font-size: 1.2rem;
+}
+
+.resume-preview .react-syntax-highlighter {
+    background-color: #333;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* ResumePreview.css */
+.resume-preview {
+    background-color: #2B2B2B;
+    color: #A9B7C6;
+    font-family: "Courier New", monospace;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 900px; /* Ограничиваем максимальную ширину */
+    margin: auto; /* Центрируем компонент на странице */
+    text-align: left; /* Выравнивание текста по левому краю */
+    overflow: auto; /* Добавим возможность прокручивания, если текст выйдет за пределы */
+}
+
+.resume-preview h1 {
+    font-size: 2.5rem;
+    color: #4A90E2;
+    margin-bottom: 20px;
+}
+
+.resume-preview p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    color: #A9B7C6;
+}
+
+.resume-preview code {
+    font-size: 1.2rem;
+}
+
+.resume-preview .react-syntax-highlighter {
+    background-color: #333;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 30px;
+    overflow-x: auto; /* Для прокрутки по горизонтали, если код слишком длинный */
+}
+
+/* ResumePreview.css */
+.resume-preview {
+    position: relative;
+}
+
+.photo-container {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+}
+
+.resume-photo {
+    width: 200px; /* Увеличиваем размер */
+    height: 200px; /* Увеличиваем размер */
+    border-radius: 50%; /* Округлая форма */
+}
+

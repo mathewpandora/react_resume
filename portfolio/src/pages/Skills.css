@@ -1,0 +1,27 @@
+.resume-preview, .skills-preview {
+    background-color: #2B2B2B;
+    color: #A9B7C6;
+    font-family: "Courier New", monospace;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 900px;
+    width: 100%; /* Добавляем, чтобы оба контейнера занимали всю ширину */
+    margin: auto;
+    text-align: left; /* Делаем одинаковым */
+    overflow: auto;
+    position: relative;
+}
+
+.skills-preview .json-container {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+}
+
+.json-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    background-color: #222;
+    padding: 10px;
+}

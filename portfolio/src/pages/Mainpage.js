@@ -1,25 +1,25 @@
 import React from "react";
-import { useLocation } from "react-router-dom"; // Импортируем useLocation для отслеживания пути
-import Sidebar from "../componetns/Sidebar";  // Импортируем компонент Sidebar
-import ResumePreview from "./ResumePreview"; // Импортируем новый компонент для отображения Python кода
+import { useLocation } from "react-router-dom";
+import Sidebar from "../componetns/Sidebar";
+import ResumePreview from "./ResumePreview";
 import "./MainPage.css";
 import Backend from "./Backend";
 import Header from "../componetns/Header";
 import Frontend from "./Frontend";
-import Skills from "./Skills";
+import Terminal from "../componetns/Terminal";
 export default function MainPage() {
-    const location = useLocation(); // Получаем информацию о текущем пути
+    const location = useLocation();
 
     return (
         <div className="main-page">
             <Header />
-            <Sidebar /> {/* Вставляем боковое меню на страницу */}
+            <Sidebar />
 
-            {/* Условно рендерим ResumePreview только на /home */}
-            {location.pathname === "/home" && <ResumePreview />}
-            {location.pathname === "/backend" && <Backend/>}
-            {location.pathname === "/frontend" && <Frontend/>}
-            {location.pathname === "/skills" && <Skills/>}
+
+            {(location.pathname === "/" || location.pathname === "/home") && <ResumePreview />}
+            {location.pathname === "/backend" && <Backend />}
+            {location.pathname === "/frontend" && <Frontend />}
+            <Terminal />
         </div>
     );
 }

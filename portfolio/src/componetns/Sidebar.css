@@ -1,4 +1,3 @@
-/* Боковое меню */
 .side-menu {
     position: fixed;
     top: 0;
@@ -10,77 +9,87 @@
     transition: left 0.3s ease;
     box-shadow: 4px 0 8px rgba(0, 0, 0, 0.3);
     z-index: 1000;
-    padding-top: 60px; /* Чтобы файлы начинались ниже хедера */
+    padding-top: 60px;
 }
 
-/* При открытии меню */
+
 .side-menu.open {
     left: 0;
 }
 
-/* Кнопка меню */
+
 .menu-button {
     position: fixed;
-    top: 40px; /* Подняли кнопку выше */
+    top: 40px;
     left: 5px;
     padding: 15px;
-    background-color: #636363; /* Более серый цвет для заливки */
+    background-color: #636363;
     color: #A9B7C6;
     font-size: 2rem;
-    border: none; /* Убрали обводку */
-    border-radius: 8px; /* Круглые углы */
+    border: none;
+    border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s;
     z-index: 1001;
 }
 
-/* При открытии меню */
+
 .menu-button.open {
-    background-color: #4A90E2; /* Темно-голубой цвет при открытом меню */
+    background-color: #4A90E2;
 }
 
 .menu-button:hover {
-    background-color: #444444; /* Потемнение серого цвета при наведении */
+    background-color: #444444;
 }
 
-/* Иконка папки */
+
 .folder-icon {
     width: 24px;
     height: 24px;
 }
 
-/* Кнопки файлов */
+
 .file-button {
     padding: 15px;
     border-bottom: 1px solid #444;
     cursor: pointer;
     font-size: 1.2rem;
     color: #A9B7C6;
-    transition: background-color 0.3s, border 0.3s; /* Добавили анимацию для бордера */
-    text-align: right; /* Выравнивание по правому краю */
-    padding-right: 20px; /* Отступ справа */
+    transition: background-color 0.3s, border 0.3s;
+    text-align: right;
+    padding-right: 20px;
 }
 
-/* Обводка при наведении */
+
 .file-button:hover {
     background-color: #555;
 }
 
-/* Активный файл с обводкой */
+
 .file-button:active {
-    border: 2px solid #4A90E2; /* Обводка при нажатии */
-    background-color: #444; /* Потемнение фона при нажатии */
+    border: 2px solid #4A90E2;
+    background-color: #444;
 }
 
-/* Отступы для корректного расположения */
+
 .side-menu {
-    padding-top: 60px; /* Расстояние от хедера, чтобы файлы не накладывались */
+    padding-top: 60px;
 }
 
 .file-icon {
-    width: 20px; /* Размер иконки */
+    width: 20px;
     height: 20px;
-    margin-right: 8px; /* Отступ справа, чтобы текст не прилипал */
-    vertical-align: middle; /* Выравнивание по центру строки */
+    margin-right: 8px;
+    vertical-align: middle;
 }
 
+.file-button.active {
+    background-color: #3a3a3a;
+    border-left: 3px solid #4CAF50;
+}
+
+
+.file-button.active .file-icon {
+    opacity: 1;
+    filter: brightness(1.2);
+}

@@ -2,27 +2,31 @@ import React, { useState, useEffect } from "react";
 import "./Frontend.css"; // Импортируем стили
 
 const frontendText = `
-Backend Skills & Achievements
+Основной стек
 
-Skills:
-- Python (Flask, Django, FastAPI)
-- RESTful APIs Development
-- Database Management (PostgreSQL, MySQL, SQLite)
-- ORM (SQLAlchemy, Django ORM)
-- Authentication (JWT, OAuth)
-- CI/CD Pipelines (GitHub Actions, Jenkins)
-- Version Control (Git, GitHub, GitLab)
-- Docker & Containerization
-- Testing (Pytest, Unittest, TDD)
-- Server Management (Nginx, Apache)
+React
+Разработка SPA-приложений с использованием функциональных компонентов
+Работа с хуками (useState, useEffect, useContext, кастомные хуки)
+Роутинг через React-Router (v6+)
+Управление состоянием:
+Context API для простых проектов
+Redux (базовый уровень) для сложных state-менеджментов
+Работа с REST API (запросы через fetch/axios)
+Основы оптимизации: React.memo, useCallback
 
-Achievements:
-- Developed a robust backend for an e-commerce platform with Django and Django Rest Framework.
-- Optimized database queries resulting in a 30% improvement in performance.
-- Implemented automated testing and CI/CD pipelines, reducing deployment time by 50%.
-- Designed and maintained RESTful APIs for a real-time messaging app using FastAPI.
-- Implemented JWT-based authentication for secure user access to various services.
-- Utilized Docker to containerize backend services, making deployments faster and more consistent.
+Разработка кроссплатформенных приложений
+Навигация (React Navigation - стековая, табы, дровер)
+Работа с аудио (воспроизведение/запись музыки, управление плейлистами)
+Локальное хранилище (AsyncStorage, SQLite)
+Реализация сложной бизнес-логики (состояния, цепочки действий)
+Стилизация (StyleSheet, кастомные UI-компоненты)
+Оптимизация производительности (FlatList, виртуализация)
+(Без опыта работы с нативными модулями - чисто Expo-решения)
+
+Опыт работы
+РЭУ Им. Г.В. Плеханова, младший техник
+* Разработка UI для внутренних сервисов для автоматизации аудиторской деятельности
+
 `;
 
 const Frontend = () => {

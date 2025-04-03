@@ -1,23 +1,39 @@
-/* src/components/Header.css */
 .header {
-    background: linear-gradient(to right, #3a3a3a, #1f1f1f); /* Градиент от менее темного к более темному */    color: white; /* Белый текст */
-    display: flex; /* Используем flexbox для выравнивания */
-    justify-content: space-between; /* Элементы на краях */
-    align-items: center; /* Выравнивание по вертикали */
-    padding: 8px 20px; /* Немного больше отступов */
-    width: 100%; /* Занимает всю ширину */
-    position: fixed; /* Фиксируем хедер в верхней части экрана */
+    background: linear-gradient(to right, #2a2a2a, #0f0f0f);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+    position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000; /* Хедер поверх остальных элементов */
-    height: 25px; /* Увеличена высота хедера для более компактного отображения */
+    z-index: 1000;
+    height: 40px;
     border-bottom: #1a1a1a 1px solid;
 }
 
-.header h1 {
-    font-size: 20px; /* Размер шрифта для заголовка */
-    margin: 15px; /* Убираем отступы вокруг текста */
-    color:#00FF00
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.python-file {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+}
+
+.file-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.resume-title {
+    font-size: 16px;
 }
 
 .play-icon {
@@ -29,6 +45,4 @@
     transform: translateY(-50%); /* Центрирование по вертикали относительно 50% */
     cursor: pointer; /* Курсор указателя при наведении */
 }
-
-
 

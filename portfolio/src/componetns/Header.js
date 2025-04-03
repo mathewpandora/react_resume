@@ -1,13 +1,12 @@
-// src/components/Header.js
 import React from "react";
-import { useNavigate } from "react-router-dom"; // Для перехода на другую страницу
-import "./Header.css"; // Для дополнительных стилей
+import "./Header.css";
+import { useTerminal } from "../context/TerminalContext";
 
 const Header = () => {
-    const navigate = useNavigate(); // Используем useNavigate для перехода
+    const { isTerminalOpen, openTerminal, closeTerminal } = useTerminal();
 
     const handlePlayClick = () => {
-        navigate("/home"); // Переход на страницу /home
+        isTerminalOpen ? closeTerminal() : openTerminal();
     };
 
     return (
@@ -15,8 +14,8 @@ const Header = () => {
 
             {/* Добавляем PNG-иконку в правый верхний угол */}
             <img
-                src="/play.png"
-                alt="Play"
+                src={isTerminalOpen ? "/stop.png" : "/play.png"}
+                alt={isTerminalOpen ? "Stop" : "Play"}
                 className="play-icon"
                 onClick={handlePlayClick}
             />

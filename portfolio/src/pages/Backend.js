@@ -2,27 +2,51 @@ import React, { useState, useEffect } from "react";
 import "./Backend.css"; // Импортируем стили
 
 const backendText = `
-Backend Skills & Achievements
+Основной стек
 
-Skills:
-- Python (Flask, Django, FastAPI)
-- RESTful APIs Development
-- Database Management (PostgreSQL, MySQL, SQLite)
-- ORM (SQLAlchemy, Django ORM)
-- Authentication (JWT, OAuth)
-- CI/CD Pipelines (GitHub Actions, Jenkins)
-- Version Control (Git, GitHub, GitLab)
-- Docker & Containerization
-- Testing (Pytest, Unittest, TDD)
-- Server Management (Nginx, Apache)
+FastAPI (приоритетный инструмент)
+Наиболее комфортный фреймворк, используемый в новых проектах
+* Работа с аутентификацией: JWT (access/refresh), OAuth2, кастомные системы доступа
+* Защищенные эндпоинты с многоуровневой валидацией прав
+* Оптимизированные Pydantic-схемы для сложных структур данных
+* Асинхронное взаимодействие с БД (SQLAlchemy 2.0+ async)
+* Интеграция внешних API (платежи, микросервисы)
+* Кастомные исключения и логирование операций
+* Кеширование через Redis (базовое использование)
+* Работа с Websockets для real-time функционала
+* Применение админ-решений для администрирования
 
-Achievements:
-- Developed a robust backend for an e-commerce platform with Django and Django Rest Framework.
-- Optimized database queries resulting in a 30% improvement in performance.
-- Implemented automated testing and CI/CD pipelines, reducing deployment time by 50%.
-- Designed and maintained RESTful APIs for a real-time messaging app using FastAPI.
-- Implemented JWT-based authentication for secure user access to various services.
-- Utilized Docker to containerize backend services, making deployments faster and more consistent.
+Flask (наибольший практический опыт)
+Использовался в большинстве коммерческих проектов
+* Разработка  REST API
+* Комплексные системы авторизации (JWT + кастомные проверки)
+* Интеграция с  БД (MySQL, flask sqlalchemy)
+* Оптимизация запросов и пагинация больших данных
+* Применение админ-решений для администрирования
+
+Django/DRF (в процессе изучения):
+* Создание моделей
+* Django ORM (базовые запросы)
+* DRF сериализаторы
+* Generic-вьюхи
+
+Опыт работы
+
+РЭУ Им. Г.В. Плеханова, младший техник
+* Разработка внутренних сервисов для автоматизации аудиторской деятельности
+* Создание серверов-прослоек для взаимодействия между:
+    * Legacy-системами предприятия
+    * Внешними CRM/ERP решениями
+* Оптимизация существующих API (сокращение времени ответа на 40%)
+* Реализация сложной бизнес-логики с учетом отраслевых требований
+* Разработка системы безопасного обмена документами
+* Участие в полном цикле: проектирование → реализация → тестирование → деплой
+
+Дополнительные технологии
+* Базы данных: MySql,
+* Redis
+* Инфраструктура: Docker, Linux-сервера
+* Инструменты: Git, Postman, Swagger, Sentry
 `;
 
 const Backend = () => {

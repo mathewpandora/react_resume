@@ -10,19 +10,15 @@ const ResumePreview = () => {
      
 def display_resume():
     name = "Трофимов Матвей"
-    birth_date = "05.09.2004"
     position = "Программист"
     specialization = "бекенд-разработка"
     contacts = {
         "Email": "trofimov.mat@yandex.ru",
-        "Телефон": "+7 915 302-94-75",
-        "Telegram": "https://t.me/matheew_pandora",
         "GitHub": "https://github.com/matheew_pandora"
     }
 
     # Выводим информацию о резюме
     print(f"Привет, меня зовут {name}!")
-    print(f"Дата рождения: {birth_date}")
     print(f"Позиция: {position} | Специализируюсь на {specialization}")
 
     print("\\nКонтакты:")
